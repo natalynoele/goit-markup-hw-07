@@ -1,69 +1,33 @@
 .team {
-        background-color: var(--third-bg-color);
-}
+  background-color: var(--third-bg-color);
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+  &__item {
+    flex-basis: calc((100% - 90px) / 4);
+    background: var(--primary-bg-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  &__member {
+    padding: 30px 32px;
+  }
+  &__names {
+    margin-bottom: 10px;
 
-.team-list {
-        display: flex;
-        gap: 30px;
-}
+    color: var(--primary-title-color);
 
-.team-member {
-        flex-basis: calc((100% - 90px) / 4);
-        background: var(--primary-bg-color);
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-                0px 2px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 0px 0px 4px 4px;
-}
+    text-align: center;
+    line-height: 1.19;
+    font-weight: 500;
+  }
+  &__positions {
+    margin-bottom: 16px;
+    color: var(--main-text-color);
 
-.member-wrap {
-        padding: 30px 32px;
-}
-
-.member-name {
-        margin-bottom: 10px;
-
-        color: var(--primary-title-color);
-
-        text-align: center;
-        line-height: 1.19;
-        font-weight: 500;
-}
-
-.member-position {
-        margin-bottom: 16px;
-        color: var(--main-text-color);
-
-        text-align: center;
-        line-height: 1.19;
-}
-
-.member-socials-list {
-        display: flex;
-}
-
-.member-socials-item:not(:last-child) {
-        margin-right: 10px;
-}
-
-.member-socials-links {
-        width: 44px;
-        height: 44px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        color: var(--primary-socials-color);
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-                background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.member-socials-links:hover,
-.member-socials-links:focus {
-        color: var(--secondary-btn-color);
-        background-color: var(--accent-color);
-}
-
-.icon-member-socials {
-        fill: currentColor;
+    text-align: center;
+    line-height: 1.19;
+  }
 }
