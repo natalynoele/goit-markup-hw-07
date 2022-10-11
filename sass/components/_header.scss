@@ -76,10 +76,9 @@
   }
 
   &__link {
-    display: flex;
+    @include flex-center();    
     padding: 32px 20px;
-    justify-content: center;
-    align-items: center;
+   
 
     color: var(--header-contact-link);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
